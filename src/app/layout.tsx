@@ -31,9 +31,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <nav className="flex items-center justify-between px-20 py-5 border-b">
-          <h1 className=" text-2xl font-bold">My Blog</h1>
+          <Link href="/" className=" text-2xl font-bold">My Blog</Link>
           <div className="flex items-center gap-3">
-            <Link href="/new-post">New Post</Link>
+            <Link href="/admin/create">New Post</Link>
             <Button variant='outline'>Sign In</Button>
           </div>
         </nav>
