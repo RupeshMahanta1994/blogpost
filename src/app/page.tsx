@@ -1,11 +1,14 @@
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react'
 
-export default function Home() {
+type Props = {}
+
+const page = (props: Props) => {
   return (
-    <div>
-      <h1>Welcome to My Website</h1>
-
+    <div className='h-screen bg-background flex flex-col items-center  w-full'>
+      <h1 className='text-4xl font-bold'>Welcome to My Blog</h1>
+      <p className='text-lg'>This is a space where I share my thoughts and ideas.</p>
     </div>
-  );
+  )
 }
+
+export default page
